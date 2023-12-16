@@ -53,7 +53,6 @@ def nreturn(n):
     if n.isdigit():
         return f"{n} is a number"
     else:
-git 
 
 
 if __name__ == '__main__':
