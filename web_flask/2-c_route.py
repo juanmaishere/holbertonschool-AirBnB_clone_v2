@@ -19,9 +19,18 @@ def index():
 @app.route('/hbnb', strict_slashes=False)
 def hbnbreturn():
     """
-    Index return
+    HBNH return
     """
     return "HBNB"
+
+
+@app.route('/c/<text>', strict_slashes=False)
+def creturn(text):
+    """
+    C variable return
+    """
+    newtext = text.replace("_", " ")
+    return f"C {newtext}"
 
 
 if __name__ == '__main__':
