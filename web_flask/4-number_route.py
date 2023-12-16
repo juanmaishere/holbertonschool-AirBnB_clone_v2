@@ -53,7 +53,7 @@ def nreturn(n):
     if n.isdigit():
         return f"{n} is a number"
     else:
-        abort(404)
+git 
 
 
 if __name__ == '__main__':
