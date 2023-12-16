@@ -56,6 +56,16 @@ def nreturn(n):
     except Exception:
         abort(404)
 
+@app.route('/number_template/<n>', strict_slashes=False)
+def renderreturn(n):
+    """
+    render template, n variable return
+    """
+    try:
+        n = int(n)
+        return render_template('number_template.html', number=n)
+    except Exception:
+        abort(404)
 
 
 if __name__ == '__main__':
