@@ -53,7 +53,7 @@ def nreturn(n):
     if n.isdigit():
         return f"{n} is a number"
     else:
-        return f"{n} is not a number"
+        abort(404)
 
 
 if __name__ == '__main__':
