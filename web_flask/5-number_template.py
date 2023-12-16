@@ -2,7 +2,7 @@
 """
 Summary
 """
-from flask import Flask, abort
+from flask import Flask, abort, render_template
 
 
 app = Flask(__name__)
@@ -63,7 +63,7 @@ def renderreturn(n):
     """
     try:
         n = int(n)
-        return render_template('number_template.html', number=n)
+        return render_template('5-number.html', number=n)
     except Exception:
         abort(404)
 
